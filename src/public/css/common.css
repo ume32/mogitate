@@ -1,0 +1,29 @@
+.header {
+    background: #ffffff;
+    width: Fixed (1, 512px) px;
+    height: Hug (53px) px;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+}
+
+@font-face {
+    font-family: "jsMath-cmti10";
+    src: url("/fonts/jsMath-cmti10.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 500;
+}
+
+.header__logo {
+    color: #f5c800;
+    width: 112px;
+    height: 33px;
+    font-family: "jsMath-cmti10", Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32.73px;
+    text-align: left;
+    text-decoration: none;
+}

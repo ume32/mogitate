@@ -1,0 +1,198 @@
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card__details {
+    display: flex;
+    justify-content: space-between; /* 要素間にスペースを均等配置 */
+    align-items: center; /* 縦方向の中央揃え */
+}
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0 10px 10px;
+    color: #333333;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin: 0 10px 0 0;
+    color: #333333;
+}
+
+/* チェックボックスグループのスタイル */
+.checkbox-group {
+    display: flex;
+    gap: 20px; /* 各季節の間隔 */
+    margin-top: 10px;
+}
+
+/* チェックボックスアイテム */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 隠すチェックボックス本体 */
+.checkbox-item input[type="checkbox"] {
+    display: none;
+}
+
+/* 丸型の外枠 */
+.checkbox-item .checkbox-circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000; /* 黒い外枠 */
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* チェック状態のデザイン */
+.checkbox-item input[type="checkbox"]:checked + .checkbox-circle {
+    background-color: #333; /* オレンジ色 */
+    border-color: #333;
+}
+
+/* 季節ラベル */
+.checkbox-item {
+    font-size: 16px;
+    color: #333;
+}
+
+/* ファイル */
+.file-upload {
+    margin-bottom: 20px;
+}
+
+.file-upload label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.file-upload input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.file-preview img {
+    max-width: 100%;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.file-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* フォームグループ全体のスタイル */
+.form-group {
+    margin-bottom: 16px;
+}
+
+/* ラベルと必須をラップするグループのスタイル */
+.label-group {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 垂直方向で中央揃え */
+    margin-bottom: 8px; /* テキストエリアとの間隔 */
+}
+
+/* ラベルのスタイル */
+.label-group label {
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 8px; /* 必須との間隔 */
+    color: #333;
+}
+
+/* テキストエリアのスタイル */
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 1.5;
+    resize: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* テキストエリアのフォーカス時 */
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* ヘルパーテキストのスタイル */
+.form-group .helper-text {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* エラーメッセージのスタイル */
+.form-group .error {
+    font-size: 0.85em;
+    color: red;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.helper-text.error-text {
+    color: red !important; /* 赤字にする */
+    font-size: 0.9em; /* 必要に応じてサイズ調整 */
+    margin-top: 5px; /* 必要に応じて余白を調整 */
+}
+
+/* input */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-control.is-invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}

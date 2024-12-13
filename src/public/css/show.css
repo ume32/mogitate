@@ -1,0 +1,160 @@
+/* 全体のコンテナ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* 商品詳細のレイアウト */
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* 商品画像 */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-image input[type="file"] {
+    display: block;
+    margin: 10px auto;
+}
+
+.product-image button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-image button:hover {
+    background-color: #ffc107;
+}
+
+/* 商品情報 */
+.product-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info .form-group {
+    margin-bottom: 20px;
+}
+
+.product-info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.product-info input[type="text"],
+.product-info input[type="number"],
+.product-info textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product-info textarea {
+    height: 120px;
+}
+
+.season-checkboxes label {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-info .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-info .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* エラーメッセージ */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

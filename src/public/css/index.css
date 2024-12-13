@@ -1,0 +1,129 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* 検索バー */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f7c040;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e0a530;
+}
+
+/* 並び替えバー */
+.sort-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.sort-bar select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-tag {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    color: #333333;
+}
+
+.sort-tag__reset {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sort-tag__reset:hover {
+    text-decoration: underline;
+}
+
+/* 商品リスト */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: #f7c040;
+    color: #ffffff;
+}
+
+.pagination .active {
+    background-color: #f7c040;
+    color: #ffffff;
+    pointer-events: none;
+    border-color: #f7c040;
+}
